@@ -1,0 +1,200 @@
+/* Importando font externa via Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Fonte personalizada */
+@font-face {
+    font-family: 'Suicide';
+    src: url('font/Suicide.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo/ tipo de fonte */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url('images/background.png');
+    background-position: center;
+    background-size: 100%;
+
+}
+
+/* Conteiner principal */
+
+.main {
+    background-image: url('images/background.png');
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person-container {
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.person-conteiner__img {
+    width: 120px;
+    border-radius: 50%;
+    border: 8px solid #9b51e0;
+    margin-bottom: 24px;
+}
+
+.person-container__name {
+    font-size: 40px;
+    margin-bottom: 8px;
+    font-family: 'Suicide';
+}
+
+.person-container__subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.info-conteiner {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+
+.info-box {
+    width: 340px;
+    background-color: #9b51e0;
+    padding: 24px;
+    border-radius: 32px;
+}
+
+.info-box_calculadora {
+    width: 340px;
+    /* height: 180px; */
+    background-color: #9b51e0;
+    padding: 24px;
+    border-radius: 32px;
+}
+
+.info-box__title {
+    font-family: 'Suicide';
+    font-size: 24px;
+    text-shadow: #bbb1fc;
+    margin-bottom: 16px;
+
+}
+
+.logo-conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.transparencia {
+    display: flex;
+    background-color: #13121a9c;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border-radius: 50px;
+}
+
+.programa {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_programas1 {
+    margin-right: 10px;
+    width: 52px;
+    height: 52px;
+    background-color: #13121A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.logo_programas2 {
+    margin-right: 10px;
+    width: 52px;
+    height: 52px;
+    background-color: #13121A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.logo_programas3 {
+    margin-right: 10px;
+    width: 52px;
+    height: 52px;
+    background-color: #13121A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.logo_programas4 {
+    width: 52px;
+    height: 52px;
+    background-color: #13121A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    float: left;
+    
+}
+
+.descricao {
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-conteiner {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.contact-conteiner__link {
+    background-color: #13121A;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-conteiner__icon {
+    width: 32px;
+}
+
+/* Animate */
+
+.contact-conteiner__link:hover .contact-conteiner__icon {
+    animation-name: rotate;
+    animation-duration: 1s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

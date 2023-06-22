@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- cabeçalho -->
+
+<body>
+    <main class="main">
+        <section class="person-container">
+            <img src="images/foto-perfil.png" alt="Foto de perfil" class="person-conteiner__img">
+            <h1 class="person-container__name"> Déborah Iara</h1>
+            <h2 class="person-container__subtitle">Estudante de Programação</h2>
+        </section>
+        <!-- Descrição sobre mim. -->
+        <section class="transparencia">
+            <section class="info-conteiner">
+                <div class="info-box">
+                    <h3 class="info-box__title">Sobre mim</h3>
+                    <p class="descricao">Sou uma ESTUDANTE, curso: Analise e Desenvolvimento de Sistemas.<br>
+                        Busco adiquirir experiencia, nesse imenso mercado de trabalho.</p>
+                </div>
+                <!--Minhas abilidades. -->
+                <div class="info-box">
+                    <h3 class="info-box__title">Habilidades</h3><br>
+                    <section class="programa">
+                        <section class="logo_programas1">
+                            <a href="" target="_blank" class="contact-conteiner__link">
+                                <img src="images/html5.svg" alt="html5" class="contact-conteiner__icon">
+                            </a>
+                        </section>
+                        <section class="logo_programas2">
+                            <a href="" target="_blank" class="contact-conteiner__link">
+                                <img src="images/css3.svg" alt="css3" class="contact-conteiner__icon">
+                            </a>
+                        </section>
+                        <section class="logo_programas3">
+                            <a href="" target="_blank" class="contact-conteiner__link">
+                                <img src="images/js.svg" alt="js" class="contact-conteiner__icon">
+                            </a>
+                        </section>
+                        <section class="logo_programas4">
+                            <a href="" target="_blank" class="contact-conteiner__link">
+                                <img src="images/jquery.svg" alt="jquery" class="contact-conteiner__icon">
+                            </a>
+                        </section>
+                    </section>
+                </div>
+                <!-- Meus interesses. -->
+                <div class="info-box">
+                    <h3 class="info-box__title">Interesses</h3>
+                    <p class="descricao">
+                    <h1>Atualmente</h1>
+                    </p>
+                    <br>
+                    <p class="descricao">Front End - Back End - Software Enginner</p>
+                </div>
+            </section>
+        </section>
+        <!-- Projeto Relogio. -->
+        <section class="transparencia">
+            <section class="info-conteiner">
+                <div class="info-box">
+                    <h3 class="info-box__title">Projeto Relógio</h3>
+                    <br>
+                    <link rel="stylesheet" href="./stylerelogio.css">
+                    <div class="relogio">
+                        <div>
+                            <span id="horas">00</span>
+                            <span class="tempo">Horas</span>
+                        </div>
+
+                        <div>
+                            <span id="minutos">00</span>
+                            <span class="tempo">Minutos</span>
+                        </div>
+
+                        <div>
+                            <span id="segundos">00</span>
+                            <span class="tempo">Segundos</span>
+                        </div>
+                    </div>
+
+                    <script src="./scriptrelogio.js"></script>
+
+                </div>
+            </section>
+            <!--Projeto Calculadora.-->
+            <section>
+                <div class="info-box_calculadora">
+                    <h3 class="info-box__title">Projeto Calculadora</h3>
+                    <link rel="stylesheet" href="./stylecalculadora.css">
+                    <div class="container">
+                        <div class="calculadora">
+                            <div>
+                                <input class="resultado" type="text" id="result" readonly="">
+                            </div>
+                            <table class="borda">
+                                <tr>
+                                    <td><button onclick="addNumber(7)">7</button></td>
+                                    <td><button onclick="addNumber(8)">8</button></td>
+                                    <td><button onclick="addNumber(9)">9</button></td>
+                                    <td><button onclick="addOperator('+')">+</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button onclick="addNumber(4)">4</button></td>
+                                    <td><button onclick="addNumber(5)">5</button></td>
+                                    <td><button onclick="addNumber(6)">6</button></td>
+                                    <td><button onclick="addOperator('-')">-</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button onclick="addNumber(1)">1</button></td>
+                                    <td><button onclick="addNumber(2)">2</button></td>
+                                    <td><button onclick="addNumber(3)">3</button></td>
+                                    <td><button onclick="addOperator('*')">*</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button onclick="addNumber(0)">0</button></td>
+                                    <td><button onclick="addDecimal()">.</button></td>
+                                    <td><button onclick="clearResult()">C</button></td>
+                                    <td><button onclick="addOperator('/')">/</button></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><button onclick="calculate()">=</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <script src="./scriptcalculadora.js"></script>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--Rodape. -->
+        <section class="contact-conteiner">
+            <a href="mailto:Deborah.Iara.V@gmail.com" target="_blank" class="contact-conteiner__link">
+                <img src="images/email.svg" alt="E-mail" class="contact-conteiner__icon"></a>
+
+            <a href="https://www.linkedin.com/in/déborah-iara-530054191/" target="_blank"
+                class="contact-conteiner__link">
+                <img src="images/linkedin.svg" alt="Linkedin" class="contact-conteiner__icon"></a>
+
+            <a href="https://github.com/YumekoKan" target="_blank" class="contact-conteiner__link">
+                <img src="images/github.svg" alt="Github" class="contact-conteiner__icon"></a>
+        </section>
+    </main>
+</body>
+
+</html>
